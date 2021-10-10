@@ -8,14 +8,15 @@ struct person{
 };
 
 struct person read()
-{ struct person t;
-  printf("Enter name ");
-  scanf("%s",t.name);
+{ 
+    struct person t;
+    printf("Enter name ");
+    scanf("%s",t.name);
   fflush(stdin);
   printf("Enter age ");
   scanf("%d",&t.age);
   fflush(stdin);
-  printf("Enter if comorbid or not y/n ");
+  printf("Are you comorbid y/n ");
   scanf("%c",&t.cm);
   if(t.age>65)
      t.pt=1;
@@ -97,9 +98,9 @@ int main()
   int count=0;
   while(1)
   {     int choice;
-        printf("\n1.Insert element  \n");
-        printf("2.Delete element \n");
-        printf("3.Display all elements  \n");
+        printf("\n1.Add Patient \n");
+        printf("2.Dequeue Patient \n");
+        printf("3.Display Appointments  \n");
         printf("4.Quit \n");
         printf("Enter your choice : ");
         scanf("%d", &choice);
@@ -115,7 +116,7 @@ int main()
             case 3:disp(p1,count);
                     break;
             case 4:exit(1);
-            default: printf("Wrong choice \n");
+            default: printf("Invalid Choice \n");
                      break;
         } 
   }
