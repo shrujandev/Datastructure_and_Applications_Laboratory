@@ -12,25 +12,25 @@ struct person read()
     struct person t;
     printf("Enter name ");
     scanf("%s",t.name);
-  fflush(stdin);
-  printf("Enter age ");
-  scanf("%d",&t.age);
-  fflush(stdin);
-  printf("Are you comorbid y/n ");
-  scanf("%c",&t.cm);
-  if(t.age>65)
-     t.pt=1;
-  else if(t.cm=='y')
-       t.pt=2;
-  else if(t.age>45)
-       t.pt=3;
-  else if(t.age>18)
-      t.pt=4;
-  else
-      { printf("Invalid age");
-        t.pt=-1;
-      }
-  return t;
+    fflush(stdin);
+    printf("Enter age ");
+    scanf("%d",&t.age);
+    fflush(stdin);
+    printf("Are you comorbid y/n ");
+    scanf("%c",&t.cm);
+    if(t.age>65)
+        t.pt=1;
+    else if(t.cm=='y')
+        t.pt=2;
+    else if(t.age>45)
+         t.pt=3;
+    else if(t.age>18)
+        t.pt=4;
+    else
+        { printf("Invalid age");
+            t.pt=-1;
+        }
+    return t;
 }
 void pq_insert(int*count,struct person p[20])
 {
