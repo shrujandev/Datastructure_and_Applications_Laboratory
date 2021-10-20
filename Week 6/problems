@@ -1,0 +1,5 @@
+1.create a binary search tree to store srn of students where srn are strings implememt the insert function of the bst by comparing strings also 
+a.implement a function to print all sorted srns in assending order 
+b.impement a function to search an srn 
+
+2. create a binary treee using arrays and traverse using preorder also check the given tree or inart search tree 
